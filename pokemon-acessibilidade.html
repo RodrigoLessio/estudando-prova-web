@@ -70,11 +70,11 @@
       nav ul {
         list-style: none;
         display: flex;
+        gap: 10px;
         justify-content: center;
         background-color: #343a40;
         padding: 10px;
-        border-radius: 5px;
-        margin: 20px 0;
+        margin-bottom: 20px;
       }
 
       nav a {
@@ -82,6 +82,11 @@
         color: #fff;
         font-weight: bold;
         margin: 0 15px;
+      }
+
+      nav a:hover {
+        transition: 0.4s;
+        color: #ffc107;
       }
 
       th {
@@ -117,10 +122,54 @@
         width: 100%;
       }
 
-      footer a {
-        color: #ffc107;
+      footer a:hover {
+        opacity: 0.8;
+      }
+
+      #curiosidades li {
+        list-style-type: "🔍";
+      }
+
+      #evolucao ul {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      #recursos a {
+        color: #4592c4;
+      }
+
+      #recursos a:hover {
+        color: #4592c4;
+        opacity: 0.8;
+      }
+
+      a[href="#info-squirtle"] {
+        color: white;
         text-decoration: none;
       }
+
+      a[href="mailto:contato@squirtlepage.com"] {
+        color: orangered;
+        text-decoration: none;
+      }
+
+      a[href="tel:+5555555555"] {
+        color: limegreen;
+        text-decoration: none;
+      }
+
+      #evolucao ul {
+        list-style-type: none;
+        text-align: center;
+        font-weight: 600;
+        font-size: 20px;        
+      }
+
+      #evolucao figcaption {
+        padding: 10px;
+      }
+
     </style>
   </head>
   <body>
@@ -222,28 +271,26 @@
 
       <section id="evolucao" aria-labelledby="evolucao-label">
         <h2 id="evolucao-label">Evolução</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Estágio</th>
-              <th>Pokémon</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1</td>
-              <td>Squirtle</td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>Wartortle</td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td>Blastoise</td>
-            </tr>
-          </tbody>
-        </table>
+          <ul>
+            <li>
+              <figure>
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/007.png" alt="imagem Squirtle">
+                <figcaption>1. Squirtle</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/008.png" alt="imagem Wartortle">
+                <figcaption>2. Wartortle</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/009.png" alt="imagem Blastoise">
+                <figcaption>3. Blastoise</figcaption>
+              </figure>
+            </li>
+          </ul>
       </section>
     </main>
 
